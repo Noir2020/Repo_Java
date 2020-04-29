@@ -7,6 +7,7 @@ public class StringQuestions {
 
         String name = "peace required";
         System.out.println("Message is: " + name);
+
     }
 
 

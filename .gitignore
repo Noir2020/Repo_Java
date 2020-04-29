@@ -13,3 +13,5 @@ doc/
 *.log
 *.txt
 *-all.xml
+/src/Class1/DataType.java
+/src/Class1/TempConversion.java
