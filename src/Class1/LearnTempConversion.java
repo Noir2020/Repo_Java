@@ -1,7 +1,6 @@
-// Implement code to convert temperature values.
 package Class1;
 
-public class TempConversion {
+public class LearnTempConversion {
 
     public static void main(String[] args) {
 
@@ -32,3 +31,5 @@ public class TempConversion {
 
     }
 }
+
+

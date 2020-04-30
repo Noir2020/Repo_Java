@@ -1,7 +1,6 @@
-//Store below scenario value in an appropriate dataType variable and print the same in console.
 package Class1;
 
-public class DataType {
+public class LearnDataType {
 
     public static void main(String[] args) {
 
@@ -104,3 +103,5 @@ public class DataType {
 
     }
 }
+
+
