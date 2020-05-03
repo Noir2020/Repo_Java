@@ -37,7 +37,9 @@ public class Task2 {
         // 3.Replace all the 'r' characters with 'f' characters.
         //String myStatement = "I am a good programmer"
 
-     
+        String afterReplace = myStatement.replace("r","f");
+        System.out.println("My result after replacing the characters: " + afterReplace);
+
 
 
     }
