@@ -10,11 +10,12 @@ public class HWReview {
         //Correction for Task2
         //use lastIndex variable to fetch value from words-array
 
+
         String myStatement = "I am a good programmer";
         String[] words = myStatement.split(" ");
         int lastIndex = words.length-1;
-        System.out.println("The last index of the sentence is: " + lastIndex);
-
+        String lastWord = words[lastIndex];
+        System.out.println("The last word of the sentence is: " + lastWord);
 
 
         //Correction for Task3
@@ -30,7 +31,7 @@ public class HWReview {
         int lengthOfName = letters.length;
         System.out.println("The length of my name is: " + lengthOfName);
 
-        //I thought we couldn't use .length method at all.
+        
 
 
     }

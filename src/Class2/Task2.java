@@ -27,6 +27,8 @@ public class Task2 {
         myStatement = words[4];
         System.out.println("The last word of the sentence is: " + myStatement);
 
+
+
         // 2.Display the total number of words in the myStatement.
         //String myStatement = "I am a good programmer"
 
