@@ -28,6 +28,17 @@ public class Task2 {
         System.out.println("The last word of the sentence is: " + myStatement);
 
 
+        /* Correction for Task2
+         * use lastIndex variable to fetch value from words-array
+
+        String myStatement = "I am a good programmer";
+        String[] words = myStatement.split(" ");
+        int lastIndex = words.length-1;
+        String lastWord = words[lastIndex];
+        System.out.println("The last word of the sentence is: " + lastWord);
+        */
+
+
 
         // 2.Display the total number of words in the myStatement.
         //String myStatement = "I am a good programmer"
@@ -43,6 +54,6 @@ public class Task2 {
         System.out.println("My result after replacing the characters: " + afterReplace);
 
 
-
+        
     }
 }
