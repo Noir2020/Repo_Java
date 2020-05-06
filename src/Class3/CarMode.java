@@ -19,7 +19,7 @@ public class CarMode {
          * if car mode is N you can "you can put car in car wash"
          * if car mode is R you can "you can reverse the car"
          */
-
+/*
         char gear = 'P';
         String driveType1 = "Snow";
         String driveType2 = "Sport";
@@ -63,4 +63,44 @@ public class CarMode {
 
 }
 
+*/
 
+
+
+        char gear = 'P';
+        String driveType = "Sport";
+
+
+
+        switch (gear) {
+            case 'P':
+                System.out.println("You can park car.");
+                break;
+            case 'D':
+                if (driveType == "Snow") {
+                    System.out.println("Drive car. You are on Snow mode.");
+
+                } else if (driveType == "Sport") {
+                    System.out.println("Drive car. You are on Sport mode.");
+
+                } else if (driveType == "Eco") {
+                    System.out.println("Drive car. You are on Eco mode.");
+
+                } else {
+                    System.out.println("Select a drive type");
+                }
+                break;
+            case 'N':
+                System.out.println("You can put car in car wash.");
+                break;
+
+            case 'R':
+                System.out.println("You can reverse the car.");
+                break;
+
+            default:
+                System.out.println("Select the gear.");
+
+        }
+    }
+}

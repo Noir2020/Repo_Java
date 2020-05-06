@@ -22,6 +22,8 @@ public class NumberDivision {
          */
 
 
+/*
+
         int number = 6749;
 
         if (number % 3 == 0) {
@@ -42,3 +44,37 @@ public class NumberDivision {
     }
 
 }
+
+*/
+
+
+        int number = 27;
+
+
+        if (number % 3 == 0 && number % 5 == 0) {
+            System.out.println("Divisible by both.");
+
+        } else if (number % 3 == 0) {
+            System.out.println("Divisible by 3");
+
+        } else if (number % 5 == 0) {
+            System.out.println("Divisible by 5.");
+
+        } else if (number % 3 != 0 || number % 5 != 0) {
+            System.out.println("The number is: " + number);
+
+        } else {
+            System.out.println("Try again with a new number.");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
