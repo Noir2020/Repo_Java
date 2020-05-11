@@ -15,7 +15,8 @@ public class PalindromeWord {
          */
 
         String word = "level";
-        String[] letters = word.split("");
+        String wordLower = word.toLowerCase();
+        String[] letters = wordLower.split("");
         String inReverse = "";
 
 
@@ -23,7 +24,7 @@ public class PalindromeWord {
         for(int i = letters.length-1; i >= 0; i--) {
             inReverse = inReverse + letters[i];
         }
-        boolean result = word.toLowerCase().equals(inReverse.toLowerCase());
+        boolean result = wordLower.equals(inReverse.toLowerCase());
         System.out.println("is " + word + " a palindrome: " + result);
 
     }

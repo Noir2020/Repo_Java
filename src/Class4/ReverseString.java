@@ -25,6 +25,10 @@ public class ReverseString {
 
          for(int i = letters.length-1; i >= 0; i--) {
              reverseMessage = reverseMessage + letters[i];
+
+             // or the same statement but shorter
+
+             //reverseMessage += letters[i];
          }
          System.out.println("Message in reverse: " + reverseMessage);
     }

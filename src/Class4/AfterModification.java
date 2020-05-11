@@ -29,7 +29,7 @@ public class AfterModification {
             sentence = sentence + words[i].substring(0,1).toUpperCase() +
                     words[i].substring(1).toLowerCase() + " ";
         }
-            System.out.println("Line after modification: " + sentence);
+            System.out.println("Line after modification: " + sentence.trim() + ".");
 
 
     }
