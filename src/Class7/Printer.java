@@ -1,6 +1,6 @@
 package Class7;
 
-public class Printer extends DoubleSide {
+public class Printer {
 
     // Create a printer
 
@@ -21,13 +21,14 @@ public class Printer extends DoubleSide {
 
 
 
-    private static int pages = 100;
-    private static int toner = 100;
+    static int pages = 100;
+    static int toner = 100;
     int pagesToLoad;
     int tonerToLoad;
     int pagesRequired;
     int tonerRequired;
     int pagesToPrint;
+    boolean singleSided = true;
 
 
     // Add toner
@@ -63,13 +64,29 @@ public class Printer extends DoubleSide {
 
 
     // Print
-    public void printSingleSide(int pagesToPrint) {
-        pagesRequired = pagesToPrint;
-        tonerRequired = pagesToPrint;
+    public void print(int pagesToPrint, boolean singleSided) {
+        if (singleSided == true) {
+            pagesRequired = pagesToPrint;
+            tonerRequired = pagesToPrint;
 
-        pages -= pagesRequired;
-        toner -= tonerRequired;
-        System.out.println("You printed " + pagesRequired + " pages single sided");
+            pages -= pagesRequired;
+            toner -= tonerRequired;
+            System.out.println("You printed " + pagesRequired + " pages single sided");
+        } else if (pagesToPrint % 2 == 0) {
+            pagesRequired = pagesToPrint / 2;
+            tonerRequired = pagesToPrint;
+
+            pages -= pagesRequired;
+            toner -= tonerRequired;
+        } else {
+            pagesRequired = pagesToPrint / 2 + 1;
+            tonerRequired = pagesToPrint;
+
+            pages -= pagesRequired;
+            toner -= tonerRequired;
+            System.out.println("You printed " + pagesRequired + " pages double sided");
+
+        }
     }
 
 

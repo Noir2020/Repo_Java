@@ -5,12 +5,11 @@ public class MyMain {
     public static void main(String[] args) {
 
         Printer p1 = new Printer();
-        p1.addToner(35);
+        p1.addToner(32);
         p1.addPages(0);
-        p1.printSingleSide(4);
-        p1.printDoubleSide(11);
+        p1.print(11,false);
         p1.printerSummary();
-        p1.checkToner(4);
+        p1.checkToner(80);
 
 
         // p1 gets a fresh copy of Printer class for a new user of a printer with:
@@ -18,15 +17,14 @@ public class MyMain {
         // latest value for static variables
 
 
-
-
         Printer p2 = new Printer();
-        p2.addToner(22);
-        p2.addPages(-9);
-        p2.printSingleSide(14);
-        p2.printDoubleSide(1);
+        p2.addToner(0);
+        p2.addPages(90);
+        p2.print(8,true);
         p2.printerSummary();
-        p2.checkToner(40);
+        p2.checkToner(47);
+
+
 
 
 
