@@ -1,10 +1,8 @@
 package Class8;
 
-public class Lab {
-
+public class Account {
 
 
 
 
 }
-
