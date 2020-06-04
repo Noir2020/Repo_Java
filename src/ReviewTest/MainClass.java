@@ -1,5 +1,6 @@
 package ReviewTest;
 
+import java.text.DecimalFormat;
 import java.util.Arrays;
 
 public class MainClass {
@@ -113,4 +114,55 @@ public class MainClass {
         }
         return missingInt;
     }
+
+
+
+    // Question 3
+    public static int calculatePoints(double yourSpeed) {
+        double speedLimit = 70;
+        double extraSpeed = yourSpeed - speedLimit;
+        String pattern = "#.##";
+        DecimalFormat df = new DecimalFormat(pattern);
+        int points = 0;
+        System.out.println("Your speed: " + df.format(yourSpeed) + "mph");
+        // We format a number using the format() method of the DecimalFormat instance.
+        System.out.println("Speed limit: " + speedLimit + "mph");
+        if (extraSpeed > 0) {
+            // speaking computer language this expression asks if there is any overspeeding
+            System.out.println("You were going " + df.format(extraSpeed) + "mph over the speed limit.");
+            points = (int)extraSpeed/5;
+            // ??? change double - int within the code
+            System.out.println("** You get " + points + " points against your license.**");
+            if (points >= 12) {
+                System.out.println("As points were more than 12, Your license suspended.");
+            }
+        } else {
+            // (extraSpeed < 0) tells us there is no overspeeding
+            System.out.println("Thank you for driving within the speed limit.");
+        }
+        return points;
+    }
+
+
+    // The java.text.DecimalFormat class is used to format numbers
+    // using a formatting pattern you specify yourself.
+
+    // Creating a DecimalFormat instance is done like this:
+    // String pattern = "###,###.###";
+    // DecimalFormat decimalFormat = new DecimalFormat(pattern);
+    //
+    // The pattern parameter passed to the DecimalFormat constructor
+    // is the number pattern that numbers should be formatted according to.
+    //
+    // As we see in the example above:
+    //    first, we created a pattern we want our number be printed:
+    //      String pattern = "#.##";
+    //    second, we created a DecimalFormat instance and passed the pattern parameter to the DecimalFormat constructor:
+    //      DecimalFormat df = new DecimalFormat(pattern);
+    //    third,  we format a number using the format() method of the DecimalFormat instance:
+    //      df.format(extraSpeed)
+
+
+
+
 }
